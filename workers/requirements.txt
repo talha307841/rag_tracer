@@ -1,0 +1,9 @@
+celery
+redis
+sqlalchemy
+psycopg2-binary
+pgvector
+minio
+transformers
+scikit-learn
+httpx

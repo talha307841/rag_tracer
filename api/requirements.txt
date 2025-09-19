@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+pgvector
+python-multipart
+minio
+prometheus-client
+pydantic
+alembic
+httpx
