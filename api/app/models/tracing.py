@@ -27,11 +27,15 @@ class Embedding(Base):
 
 class Retrieval(Base):
     __tablename__ = 'retrievals'
+
     id = Column(Integer, primary_key=True, index=True)
     prompt_id = Column(Integer, ForeignKey('prompts.id'), nullable=False)
     document_id = Column(String, nullable=False)
     similarity_score = Column(Float, nullable=False)
-    metadata = Column(JSON, nullable=True)
+
+    # Use safe Python attribute, map to DB column "metadata"
+    meta_data = Column("metadata", JSON, nullable=True)
+
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     prompt = relationship("Prompt", back_populates="retrievals")
 

@@ -41,8 +41,7 @@ class TraceIn(BaseModel):
     store_embedding_dump: Optional[bool] = False
     store_retrieval_logs: Optional[bool] = False
     store_response_logs: Optional[bool] = False
-</content>
-</file>
+
 
 # Output Schemas
 class HallucinationCheckOut(HallucinationCheckIn):

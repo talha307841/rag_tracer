@@ -153,6 +153,16 @@ React-based visualization dashboard.
 
 See the example notebook in `notebooks/rag_tracer_example.ipynb` for a complete integration example with OpenAI and pgvector.
 
+### Simple Test
+
+You can test the tracer functionality with the provided test script:
+
+```bash
+python test_tracer.py
+```
+
+This script demonstrates both synchronous and asynchronous tracing without requiring external API keys.
+
 ### Basic Integration
 
 ```python
@@ -167,7 +177,7 @@ result = tracer.trace_complete(
     system_prompt="You are a helpful assistant.",
     final_prompt="Context: Elon Musk is CEO of Tesla. Question: Who is CEO of Tesla?",
     embedding=EmbeddingData(
-        vector=[0.1, 0.2, 0.3, ...],  # Your embedding vector
+        vector=[0.1, 0.2, 0.3, 0.4, 0.5],  # Your embedding vector
         retrieval_candidates=[{"doc_id": "doc1", "score": 0.95}]
     ),
     retrievals=[
