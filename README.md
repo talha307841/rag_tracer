@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# rag_tracer
-=======
 # RAG Tracer: Tracing & Hallucination Detection System
 
 A comprehensive tracing system for Retrieval-Augmented Generation (RAG) pipelines with hallucination detection capabilities. This system allows you to monitor, analyze, and detect hallucinations in any RAG application using OpenAI or Hugging Face models.
@@ -264,4 +261,3 @@ The system exposes Prometheus metrics at `/metrics` endpoint. Grafana dashboards
 ## License
 
 MIT License - see LICENSE file for details.
->>>>>>> e546dc6 (Rag tracer boiler plate)
