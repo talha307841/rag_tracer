@@ -2,7 +2,7 @@ from sqlalchemy import Column, String, Float, Integer, ForeignKey, DateTime, JSO
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
 from pgvector.sqlalchemy import Vector
-from ..core.database import Base
+from app.core.database import Base
 
 class Prompt(Base):
     __tablename__ = 'prompts'

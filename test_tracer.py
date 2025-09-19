@@ -1,7 +1,7 @@
 from tracer_sdk.tracer import RAGTracer, EmbeddingData, RetrievalData, ResponseData, TelemetryData
 
 # Initialize tracer
-tracer = RAGTracer(api_url="http://rag_tracer-dashboard-1:8080")
+tracer = RAGTracer(api_url="http://localhost:8000")
 print("Tracer initialized")
 
 # Simple test without external dependencies
